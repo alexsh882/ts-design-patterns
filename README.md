@@ -24,6 +24,19 @@
 
 **Objetivo**: Utilizar el patrón **Factory Method** para crear diferentes tipos de equipos.
 
+- Cree las clases específicas para cada tipo de equipo (Notebook, Desktop, Servidor), cada una con sus propias propiedades.
+- Cree una clase EquipoFactory con un método crearEquipo que recibe como parámetro el tipo y las características, basado en el tipo de equipo, devuelve una instancia de la clase adecuada, en mi caso definí los tipos con un enum.
+- Luego ejecuté el método `detalles()` para obtener la información formateada del equipo.
+
+### Código del ejemplo
+
+![Imagen](/src/examples/img/factory-method-code.png)
+
+### Log
+
+![Imagen](/src/examples/img/factory-method-log.png)
+
+
 ## Ejercicio 3: Implementar Patrón Observer para Seguimiento del Estado
 
 **Objetivo**: Utilizar el patrón **Observer** para notificar a un departamento de soporte cuando un equipo cambia de estado.
