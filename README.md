@@ -12,6 +12,14 @@
 - Cree un Enum con los estados que el sistema va a permitir registrar para cada equipo.
 - Agregue un método `agregarEquipo` que recibe como parámetro un objeto `Equipo` para agregar el mismo al listado y un método `listarEquipos` para devolver la lista completa de equipos registrados.
 
+### Código
+
+![Imagen](/src/examples/img/singleton-code.png)
+
+### Log
+
+![Imagen](/src/examples/img/singleton-log.png)
+
 ## Ejercicio 2: Implementar Patrón Factory Method para Crear Equipos
 
 **Objetivo**: Utilizar el patrón **Factory Method** para crear diferentes tipos de equipos.
