@@ -5,9 +5,9 @@ type Equipo = {
 };
 
 export enum EstadoEquipo {
-    AVAILABLE = "Disponible",
-    IN_USE = "En uso",
-    UNDER_REPAIR = "En reparación",
+  AVAILABLE = "Disponible",
+  IN_USE = "En uso",
+  UNDER_REPAIR = "En reparación",
 }
 
 export class Inventario {
@@ -20,7 +20,7 @@ export class Inventario {
     this.equipos.push(equipo);
   }
 
-  public getEquipos(): Equipo[] {
+  public listarEquipos(): Equipo[] {
     return this.equipos;
   }
 

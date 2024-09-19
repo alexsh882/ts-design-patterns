@@ -23,5 +23,5 @@ inventario.agregarEquipo({
   status: EstadoEquipo.AVAILABLE
 })
 
-console.log(inventario.getEquipos())
+console.log(inventario.listarEquipos())
 
