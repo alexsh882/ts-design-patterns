@@ -16,6 +16,10 @@
 
 ![Imagen](/src/examples/img/singleton-code.png)
 
+### Implementación
+
+![Imagen](/src/examples/img/singleton-implementation.png)
+
 ### Log
 
 ![Imagen](/src/examples/img/singleton-log.png)
@@ -32,6 +36,10 @@
 
 ![Imagen](/src/examples/img/factory-method-code.png)
 
+### Implementación
+
+![Imagen](/src/examples/img/factory-method-implementation.png)
+
 ### Log
 
 ![Imagen](/src/examples/img/factory-method-log.png)
@@ -40,6 +48,27 @@
 ## Ejercicio 3: Implementar Patrón Observer para Seguimiento del Estado
 
 **Objetivo**: Utilizar el patrón **Observer** para notificar a un departamento de soporte cuando un equipo cambia de estado.
+
+
+- Cree una clase `Soporte` que actúa como observador con el método `notificar()` que recibe el mensaje y "notifica" cuando el estado de un equipo cambia.
+
+- Cree una clase `Equipo` con las propiedades `detalle`, `tipo`, `status` y `observadores` un array que almacena Soporte, ademas los siguientes métodos:
+    - `agregarObservador()` que recibe por parámetro al soporte y lo agrega al array, 
+    - `obtenerDetalle()` que simplemente me formatea el detalle y el tipo, 
+    - `cambiarEstado()` realiza el cambio de estado y 
+    - `notificarObservadores()` que ejecuta la función notificar de la clase `Soporte`.
+
+### Código del ejemplo
+
+![Imagen](/src/examples/img/observer-code.png)
+
+### Implementación
+
+![Imagen](/src/examples/img/observer-implementation.png)
+
+### Log
+
+![Imagen](/src/examples/img/observer-log.png)
 
 ## Ejercicio 4: Adaptador para Cambiar la Interfaz de Inventarios Viejos
 

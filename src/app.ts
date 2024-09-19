@@ -27,6 +27,7 @@ console.log(inventario.listarEquipos());
 console.info("=== Patrón de diseño Factory Method ===");
 
 import { EquipoFactory, EquipoType } from "./examples/factory-method";
+import { Equipo, Soporte } from "./examples/observer";
 
 const factory = new EquipoFactory();
 
@@ -38,3 +39,11 @@ const notebook = factory.crearEquipo(
 );
 
 console.log(notebook.detalles());
+
+console.info("=== Patrón de diseño Observer ===");
+
+const soporte = new Soporte();
+const equipo = new Equipo("Notebook HP", "Portátil", "disponible");
+equipo.agregarObservador(soporte);
+equipo.cambiarEstado("en reparación");
+equipo.cambiarEstado("reparado")
