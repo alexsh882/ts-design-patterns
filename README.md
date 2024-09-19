@@ -73,3 +73,19 @@
 ## Ejercicio 4: Adaptador para Cambiar la Interfaz de Inventarios Viejos
 
 **Objetivo**: Implementar el patrón **Adaptador** para integrar una clase antigua de inventario con el nuevo sistema.
+
+- Cree una clase `InventarioViejo` que tiene un método `agregarItem`.
+- Cree una interfaz `IInventario` que tendrá el contrato para el nuevo inventario, con los métodos `addItem` y el atributo `items` que es una lista de `Equipos`.
+- Implemente una clase `AdaptadorInventario` que permite utilizar `InventarioViejo` con la nueva interfaz `Inventario`.
+
+### Código del ejemplo
+
+![Imagen](/src/examples/img/adapter-code.png)
+
+### Implementación
+
+![Imagen](/src/examples/img/adapter-implementation.png)
+
+### Log
+
+![Imagen](/src/examples/img/adapter-log.png)

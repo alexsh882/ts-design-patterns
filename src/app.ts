@@ -28,6 +28,7 @@ console.info("=== Patrón de diseño Factory Method ===");
 
 import { EquipoFactory, EquipoType } from "./examples/factory-method";
 import { Equipo, Soporte } from "./examples/observer";
+import { AdaptadorInventario, InventarioViejo } from "./examples/adapter";
 
 const factory = new EquipoFactory();
 
@@ -46,4 +47,16 @@ const soporte = new Soporte();
 const equipo = new Equipo("Notebook HP", "Portátil", "disponible");
 equipo.agregarObservador(soporte);
 equipo.cambiarEstado("en reparación");
-equipo.cambiarEstado("reparado")
+equipo.cambiarEstado("reparado");
+
+console.info("=== Patrón de diseño Adaptador ===");
+
+const inventarioViejo = new InventarioViejo();
+const adaptador = new AdaptadorInventario(inventarioViejo);
+adaptador.addItem({
+  name: "Laptop",
+  type: "Computadora",
+  status: EstadoEquipo.AVAILABLE,
+});
+
+console.log(adaptador.listarEquipos());
